@@ -5,7 +5,6 @@ import { Button, Card, Col, Row, message } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import { setContactData } from "../../../store/reducer/contact.reducer";
 import Meta from "antd/es/card/Meta";
-import "./contact-add.module.css";
 
 const ContactAdd: React.FC = () => {
   const navigate = useNavigate();
