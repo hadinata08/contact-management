@@ -46,7 +46,7 @@
   align-items: end;
 }
 
-.btn-add {
+:global(.btn-add) {
   background: linear-gradient(108.32deg, #62cdcb 24.88%, #4599db 78.49%);
   color: #fff;
   font-weight: bold;
