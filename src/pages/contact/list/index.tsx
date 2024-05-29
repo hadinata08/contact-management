@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setContactListData } from "../../../store/reducer/contact.reducer";
 import { useNavigate } from "react-router-dom";
 import { EditPenIcon, TrashIcon } from "../../../assets";
-import "./contact-list.module.css";
+import "./contact-list.css";
 
 const { Meta } = Card;
 
@@ -80,10 +80,14 @@ const ContactList: React.FC = () => {
             >
               <Meta
                 style={{ color: "#fff" }}
-                title={`${contact.firstName} ${contact.lastName}`}
+                title={
+                  <p style={{ color: "#fff" }}>
+                    {contact.firstName} {contact.lastName}
+                  </p>
+                }
                 description={
                   <>
-                    <p>Age: {contact.age}</p>
+                    <p style={{ color: "#fff" }}>Age: {contact.age}</p>
                     <div className="description-card">
                       <img
                         src={EditPenIcon}
