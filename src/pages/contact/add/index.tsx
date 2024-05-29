@@ -1,4 +1,10 @@
-import React, { ChangeEvent, FormEvent, useCallback, useState } from "react";
+import React, {
+  ChangeEvent,
+  FormEvent,
+  useCallback,
+  useEffect,
+  useState,
+} from "react";
 import { postData } from "../../../services/apiService";
 import { useNavigate } from "react-router-dom";
 import { Button, Card, Col, Row, message } from "antd";
@@ -78,6 +84,11 @@ const ContactAdd: React.FC = () => {
     },
     [contactData, error, navigate, success]
   );
+
+  useEffect(() => {
+    dispatch(setContactData({}));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div
