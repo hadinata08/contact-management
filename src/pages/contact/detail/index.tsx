@@ -94,8 +94,7 @@ const ContactDetail: React.FC = () => {
 
   return (
     <div
-      className="card-add-container"
-      style={{ display: "flex", justifyContent: "center" }}
+      style={{ paddingTop: "10%", display: "flex", justifyContent: "center" }}
     >
       <Card
         title={`Detail Contact ${contactData?.firstName} ${contactData?.lastName}`}

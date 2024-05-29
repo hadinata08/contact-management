@@ -2,7 +2,7 @@ import React from "react";
 import { useCallback, useEffect, useState } from "react";
 import { getData } from "../../../services/apiService";
 import { ContactData, ContactDataResponse } from "../../../types/contact.type";
-import { Button, Card, Col, Popconfirm, Row, message } from "antd";
+import { Card, Col, Popconfirm, Row, message } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import { setContactListData } from "../../../store/reducer/contact.reducer";
 import { useNavigate } from "react-router-dom";
@@ -55,9 +55,9 @@ const ContactList: React.FC = () => {
     <div className="list-container">
       <div className="title-container">
         <h1 className="title-txt">Contact List</h1>
-        <Button className="btn-add" onClick={() => navigate("/contact/add")}>
+        <button className="btn-add" onClick={() => navigate("/contact/add")}>
           Add Contact
-        </Button>
+        </button>
       </div>
 
       <Row className="card-container">

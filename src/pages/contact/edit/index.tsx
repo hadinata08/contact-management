@@ -102,7 +102,9 @@ const ContactEdit: React.FC = () => {
   );
 
   return (
-    <div className="card-add-container">
+    <div
+      style={{ paddingTop: "10%", display: "flex", justifyContent: "center" }}
+    >
       <Card title="Edit Contact" style={{ width: "80rem" }}>
         <form
           onSubmit={handleSubmit}
