@@ -47,8 +47,12 @@
 }
 
 :global(.btn-add) {
-  background: linear-gradient(108.32deg, #62cdcb 24.88%, #4599db 78.49%);
-  color: #fff;
+  background: linear-gradient(
+    108.32deg,
+    #62cdcb 24.88%,
+    #4599db 78.49%
+  ) !important;
+  color: #fff !important;
   font-weight: bold;
   font-size: 24px;
   height: max-content;
