@@ -1,4 +1,4 @@
-:global(.list-container) {
+.list-container {
   padding: 20px;
   /* width: max-content; */
 }
@@ -38,7 +38,7 @@
   justify-content: center;
 }
 
-:global(.title-container) {
+.title-container {
   margin-bottom: 20px !important;
   display: flex;
   justify-content: space-between;
@@ -46,7 +46,7 @@
   align-items: end;
 }
 
-:global(.btn-add) {
+.btn-add {
   background: linear-gradient(
     108.32deg,
     #62cdcb 24.88%,
@@ -60,7 +60,7 @@
   align-items: end;
 }
 
-:global(.description-card) {
+.description-card {
   display: flex;
   gap: 10px;
   justify-content: end;
